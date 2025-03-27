@@ -1,0 +1,23 @@
+running install
+running bdist_egg
+running egg_info
+writing manifest file 'chamfer.egg-info/SOURCES.txt'
+running install_lib
+running build_ext
+creating build/bdist.linux-x86_64/egg
+byte-compiling build/bdist.linux-x86_64/egg/chamfer.py to chamfer.cpython-39.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying chamfer.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying chamfer.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying chamfer.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying chamfer.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+removing '/home/tiancm/.local/lib/python3.9/site-packages/chamfer-2.0.0-py3.9-linux-x86_64.egg' (and everything under it)
+creating /home/tiancm/.local/lib/python3.9/site-packages/chamfer-2.0.0-py3.9-linux-x86_64.egg
+Extracting chamfer-2.0.0-py3.9-linux-x86_64.egg to /home/tiancm/.local/lib/python3.9/site-packages
+byte-compiling /home/tiancm/.local/lib/python3.9/site-packages/chamfer-2.0.0-py3.9-linux-x86_64.egg/chamfer.py to chamfer.cpython-39.pyc
+chamfer 2.0.0 is already the active version in easy-install.pth
+
+Installed /home/tiancm/.local/lib/python3.9/site-packages/chamfer-2.0.0-py3.9-linux-x86_64.egg
+Processing dependencies for chamfer==2.0.0
+Finished processing dependencies for chamfer==2.0.0

@@ -1,0 +1,28 @@
+running install
+running bdist_egg
+running egg_info
+writing manifest file 'emd_ext.egg-info/SOURCES.txt'
+running install_lib
+running build_ext
+gcc -pthread -B /home/tiancm/.conda/envs/m2ae/compiler_compat -Wno-unused-result -Wsign-compare -DNDEBUG -fwrapv -O2 -Wall -fPIC -O2 -isystem /home/tiancm/.conda/envs/m2ae/include -fPIC -O2 -isystem /home/tiancm/.conda/envs/m2ae/include -fPIC -I/home/tiancm/.local/lib/python3.9/site-packages/torch/include -I/home/tiancm/.local/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/home/tiancm/.local/lib/python3.9/site-packages/torch/include/TH -I/home/tiancm/.local/lib/python3.9/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/tiancm/.conda/envs/m2ae/include/python3.9 -c cuda/emd.cpp -o build/temp.linux-x86_64-3.9/cuda/emd.o -g -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -DTORCH_EXTENSION_NAME=emd_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -std=c++17
+/usr/local/cuda/bin/nvcc -I/home/tiancm/.local/lib/python3.9/site-packages/torch/include -I/home/tiancm/.local/lib/python3.9/site-packages/torch/include/torch/csrc/api/include -I/home/tiancm/.local/lib/python3.9/site-packages/torch/include/TH -I/home/tiancm/.local/lib/python3.9/site-packages/torch/include/THC -I/usr/local/cuda/include -I/home/tiancm/.conda/envs/m2ae/include/python3.9 -c cuda/emd_kernel.cu -o build/temp.linux-x86_64-3.9/cuda/emd_kernel.o -D__CUDA_NO_HALF_OPERATORS__ -D__CUDA_NO_HALF_CONVERSIONS__ -D__CUDA_NO_BFLOAT16_CONVERSIONS__ -D__CUDA_NO_HALF2_OPERATORS__ --expt-relaxed-constexpr --compiler-options '-fPIC' -O2 -DTORCH_API_INCLUDE_EXTENSION_H -DPYBIND11_COMPILER_TYPE=\"_gcc\" -DPYBIND11_STDLIB=\"_libstdcpp\" -DPYBIND11_BUILD_ABI=\"_cxxabi1011\" -DTORCH_EXTENSION_NAME=emd_cuda -D_GLIBCXX_USE_CXX11_ABI=0 -gencode=arch=compute_86,code=compute_86 -gencode=arch=compute_86,code=sm_86 -std=c++17
+creating build/lib.linux-x86_64-3.9
+g++ -pthread -B /home/tiancm/.conda/envs/m2ae/compiler_compat -shared -Wl,--allow-shlib-undefined -Wl,-rpath,/home/tiancm/.conda/envs/m2ae/lib -Wl,-rpath-link,/home/tiancm/.conda/envs/m2ae/lib -L/home/tiancm/.conda/envs/m2ae/lib -Wl,--allow-shlib-undefined -Wl,-rpath,/home/tiancm/.conda/envs/m2ae/lib -Wl,-rpath-link,/home/tiancm/.conda/envs/m2ae/lib -L/home/tiancm/.conda/envs/m2ae/lib build/temp.linux-x86_64-3.9/cuda/emd.o build/temp.linux-x86_64-3.9/cuda/emd_kernel.o -L/home/tiancm/.local/lib/python3.9/site-packages/torch/lib -L/usr/local/cuda/lib64 -lc10 -ltorch -ltorch_cpu -ltorch_python -lcudart -lc10_cuda -ltorch_cuda -o build/lib.linux-x86_64-3.9/emd_cuda.cpython-39-x86_64-linux-gnu.so
+creating build/bdist.linux-x86_64
+creating build/bdist.linux-x86_64/egg
+byte-compiling build/bdist.linux-x86_64/egg/emd_cuda.py to emd_cuda.cpython-39.pyc
+creating build/bdist.linux-x86_64/egg/EGG-INFO
+copying emd_ext.egg-info/PKG-INFO -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying emd_ext.egg-info/SOURCES.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying emd_ext.egg-info/dependency_links.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+copying emd_ext.egg-info/top_level.txt -> build/bdist.linux-x86_64/egg/EGG-INFO
+creating dist
+removing 'build/bdist.linux-x86_64/egg' (and everything under it)
+creating /home/tiancm/.local/lib/python3.9/site-packages/emd_ext-0.0.0-py3.9-linux-x86_64.egg
+Extracting emd_ext-0.0.0-py3.9-linux-x86_64.egg to /home/tiancm/.local/lib/python3.9/site-packages
+byte-compiling /home/tiancm/.local/lib/python3.9/site-packages/emd_ext-0.0.0-py3.9-linux-x86_64.egg/emd_cuda.py to emd_cuda.cpython-39.pyc
+Adding emd-ext 0.0.0 to easy-install.pth file
+
+Installed /home/tiancm/.local/lib/python3.9/site-packages/emd_ext-0.0.0-py3.9-linux-x86_64.egg
+Processing dependencies for emd-ext==0.0.0
+Finished processing dependencies for emd-ext==0.0.0
